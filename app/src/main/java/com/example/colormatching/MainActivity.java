@@ -54,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
     public void Shuffle (View view) {
         String[] colors = getResources().getStringArray(R.array.colors);
 
-        // make if statements to protect against randomness
+
         int randomColor1 = (int) (colors.length * Math.random());
         int randomColor2 = (int) (colors.length * Math.random());
         if (randomColor1 == randomColor2) {
@@ -100,7 +100,7 @@ public class MainActivity extends AppCompatActivity {
 
         int color = ContextCompat.getColor(this, colorID );
 
-        findViewById(R.id.ouput1).setBackgroundColor(color);
+        findViewById(R.id.output1).setBackgroundColor(color);
 
     }
     private void setColor2(String name) {
@@ -108,7 +108,7 @@ public class MainActivity extends AppCompatActivity {
 
         int color = ContextCompat.getColor(this, colorID );
 
-        findViewById(R.id.ouput2).setBackgroundColor(color);
+        findViewById(R.id.output2).setBackgroundColor(color);
 
     }
     private void setColor3(String name) {
@@ -116,7 +116,7 @@ public class MainActivity extends AppCompatActivity {
 
         int color = ContextCompat.getColor(this, colorID );
 
-        findViewById(R.id.ouput3).setBackgroundColor(color);
+        findViewById(R.id.output3).setBackgroundColor(color);
 
     }
     private void setColor4(String name) {
@@ -124,7 +124,7 @@ public class MainActivity extends AppCompatActivity {
 
         int color = ContextCompat.getColor(this, colorID );
 
-        findViewById(R.id.ouput4).setBackgroundColor(color);
+        findViewById(R.id.output4).setBackgroundColor(color);
 
     }
     private void setColor5(String name) {
@@ -132,7 +132,7 @@ public class MainActivity extends AppCompatActivity {
 
         int color = ContextCompat.getColor(this, colorID );
 
-        findViewById(R.id.ouput5).setBackgroundColor(color);
+        findViewById(R.id.output5).setBackgroundColor(color);
 
     }
     private void setColor6(String name) {
@@ -140,7 +140,7 @@ public class MainActivity extends AppCompatActivity {
 
         int color = ContextCompat.getColor(this, colorID );
 
-        findViewById(R.id.ouput6).setBackgroundColor(color);
+        findViewById(R.id.output6).setBackgroundColor(color);
 
     }
 

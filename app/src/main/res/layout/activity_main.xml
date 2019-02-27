@@ -8,7 +8,7 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/ouput1"
+        android:id="@+id/output1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         />
@@ -23,7 +23,7 @@
         />
 
     <TextView
-        android:id="@+id/ouput2"
+        android:id="@+id/output2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         />
@@ -38,7 +38,7 @@
         />
 
     <TextView
-        android:id="@+id/ouput3"
+        android:id="@+id/output3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         />
@@ -53,7 +53,7 @@
         />
 
     <TextView
-        android:id="@+id/ouput4"
+        android:id="@+id/output4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         />
@@ -68,7 +68,7 @@
         />
 
     <TextView
-        android:id="@+id/ouput5"
+        android:id="@+id/output5"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         />
@@ -83,7 +83,7 @@
         />
 
     <TextView
-        android:id="@+id/ouput6"
+        android:id="@+id/output6"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         />
