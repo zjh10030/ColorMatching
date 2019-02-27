@@ -57,10 +57,35 @@ public class MainActivity extends AppCompatActivity {
         // make if statements to protect against randomness
         int randomColor1 = (int) (colors.length * Math.random());
         int randomColor2 = (int) (colors.length * Math.random());
+        if (randomColor1 == randomColor2) {
+            while (randomColor1 == randomColor2) {
+                randomColor2 = (int) (colors.length * Math.random());
+            }
+            }
         int randomColor3 = (int) (colors.length * Math.random());
+        if (randomColor3 == randomColor2 || randomColor3 == randomColor1) {
+            while (randomColor3 == randomColor2 || randomColor3 == randomColor1) {
+                randomColor3 = (int) (colors.length * Math.random());
+            }
+        }
         int randomColor4 = (int) (colors.length * Math.random());
+        if (randomColor4 == randomColor2 || randomColor4 == randomColor1 || randomColor4 == randomColor3) {
+            while (randomColor4 == randomColor2 || randomColor4 == randomColor1 || randomColor4 == randomColor3) {
+                randomColor4 = (int) (colors.length * Math.random());
+            }
+        }
         int randomColor5 = (int) (colors.length * Math.random());
+        if (randomColor5 == randomColor2 || randomColor5 == randomColor1 || randomColor5 == randomColor3 || randomColor5 == randomColor4) {
+            while (randomColor5 == randomColor2 || randomColor5 == randomColor1 || randomColor5 == randomColor3 || randomColor5 == randomColor4) {
+                randomColor5 = (int) (colors.length * Math.random());
+            }
+        }
         int randomColor6 = (int) (colors.length * Math.random());
+        if (randomColor6 == randomColor2 || randomColor6 == randomColor1 || randomColor6 == randomColor3 || randomColor6 == randomColor4 || randomColor6 == randomColor5) {
+            while (randomColor6 == randomColor2 || randomColor6 == randomColor1 || randomColor6 == randomColor3 || randomColor6 == randomColor4 || randomColor6 == randomColor5) {
+                randomColor6 = (int) (colors.length * Math.random());
+            }
+        }
 
         setColor1(colors[randomColor1]);
         setColor2(colors[randomColor2]);
@@ -69,7 +94,7 @@ public class MainActivity extends AppCompatActivity {
         setColor5(colors[randomColor5]);
         setColor6(colors[randomColor6]);
     }
-    // make it so that you can ask for the right color and respond for yes or no. 
+    // make it so that you can ask for the right color and respond for yes or no.
     private void setColor1(String name) {
         int colorID = getResources().getIdentifier(name, "color", this.getPackageName());
 
